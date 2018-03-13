@@ -6,12 +6,14 @@
     <meta charset="utf-8">
 
     <script type="text/javascript">
-        function cube() {
-
+        function cuarta_potencia() {
             var num = document.getElementById("n1");
+            num.value = Math.pow(num.value, 4);
+        }
 
+        function cube() {
+            var num = document.getElementById("n1");
             num.value = Math.pow(num.value, 3);
-
         }
     </script>
 
@@ -25,6 +27,7 @@
     <p>
 
         <button onclick="cube()"> x^3 </button>
+        <button onclick="cuarta_potencia()"> x^4 </button>
 
 </body>
 
